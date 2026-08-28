@@ -1,130 +1,163 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isra University</title>
+    <title>Al-Isra University</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body> 
+
+<body>
+
+   
     <header class="header">
+
         <div class="logo">
             <span class="logo-text">IU</span>
-            <span class="logo-subtext">جامعة </h3>
-            <h6 class="logo-subtext">AL-ISRA UNIVERSITY</h6>
+            <span class="logo-subtext">جامعة الإسراء</span>
+            <span class="logo-subtext">AL-ISRA UNIVERSITY</span>
         </div>
 
         <nav class="pa-links">
-            <a href="home.html">اتصل بنا</a>
-            <a href="register.html">من نحن</a>
-            <a href="contact.html"> الاسئلة السابقة</a>
-            <a href="login.html">الواجبات</a>
-            <a href="login.html"> المواد </a>
-            <a href="profile.html">الرئيسية</a>
-
-
-
-
+            <a href="#">الرئيسية</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <a href="aboutas.html">من نحن</a>
         </nav>
 
     </header>
 
-    <div Class="z">
 
+    <section class="hero-section">
 
-        <img class="imgt" src="C:\Users\rania_fusrpfk\Downloads\OIP (4).png" ; <div class="hero-section">
         <div class="hero-content">
-            <h1>مرحباً بك في منصة مواد جامعة الإسراء</h1>
-            <p>منصتك الإلكترونية للوصول إلى المواد الدراسية والأسئلة السابقة...</p>
-        </div>
-    </div>
 
+            <h1>أهلاً وسهلاً بكم في منصتنا التعليمية 🎓</h1>
 
-    <div class="hero logo">IU</div>
+            <p>
+                منصتك التعليمية للوصول إلى المواد الدراسية،
+                الأسئلة السابقة والواجبات وكل ما تحتاجه خلال مسيرتك الجامعية.
+            </p>
 
-
-    </div>
-
-
-    <div class="  information  ">
-
-        <div class="acaont">
-
-         <img class="img" src="https://www.w3schools.com/howto/img_avatar.png" alt="User Icon" class="user-img">
-
-
-
-
-            <span> الطالب </span>
-            <span> التخصص : هندسة البرمجيات </span>
-            <span> الرقم الجامعي : 123456789 </span>
-
+            <a href="#subjects" class="hero-button">استكشف المواد</a>
 
         </div>
 
+    </section>
 
 
+  
+    <section class="student-section">
 
-    </div>
-    <div class="menu">
+        <h2>معلومات الطالب</h2>
 
-        <h2 class="start"> القائمة الرئيسية </h2>
-        <div class="card">
-            <span>الرئيسية</span>
-            <span>🏠</span>
+        <div class="student-card">
+
+            <img 
+                class="user-img"
+                src="https://www.w3schools.com/howto/img_avatar.png"
+                alt="Student">
+
+            <div class="student-info">
+
+                <h3>مرحباً، الطالب 👋</h3>
+
+                <p><strong>التخصص: </strong> &nbsp; هندسة البرمجيات</p>
+
+                <p><strong> الرقم الجامعي: </strong>&nbsp; 12354 </p>
+
+                <p><strong >السنة الدراسية: </strong> &nbsp; الثانية</p>
+
+            </div>
+
         </div>
 
+    </section>
 
-        <div class="card">
-            <span>المواد</span>
-            <span>📖</span>
+
+    <section class="subjects-section" id="subjects">
+
+        <h2>موادك الدراسية</h2>
+
+        <div class="subjects-container">
+
+            <div class="subject-card">
+
+                <div class="subject-icon">⚛️</div>
+
+                <h3>الفيزياء</h3>
+
+                <p>
+                    كل ما يتعلق بمادة الفيزياء من مواد وأسئلة وواجبات.
+                </p>
+
+                <a href="#" class="subject-button">عرض المادة</a>
+
+            </div>
+
+
+          
+            <div class="subject-card">
+
+                <div class="subject-icon">∫</div>
+
+                <h3>الكالكولاس</h3>
+
+                <p>
+                    المحاضرات والأسئلة السابقة والواجبات الخاصة بالكالكولاس.
+                </p>
+
+                <a href="#" class="subject-button">عرض المادة</a>
+
+            </div>
+
+
+       
+            <div class="subject-card">
+
+                <div class="subject-icon">💻</div>
+
+                <h3>البرمجة</h3>
+
+                <p>
+                    مواد البرمجة والأسئلة السابقة والواجبات والملفات.
+                </p>
+
+                <a href="#" class="subject-button">عرض المادة</a>
+
+            </div>
+
         </div>
 
+    </section>
 
-        <div class="card">
-            <span>الأسئلة السابقة</span>
-            <span>📄</span>
-        </div>
+    </section>
 
 
-        <div class="card">
-            <span>الواجبات</span>
-            <span>📋</span>
-        </div>
+    <section class="contact-section">
+
+        <h2>تواصل معنا</h2>
+
+        <p>
+            إذا كان لديك أي استفسار أو تحتاج إلى مساعدة، يمكنك التواصل معنا.
+        </p>
+
+        <a href="contact.html" class="contact-button">تواصل معنا</a>
+
+    </section>
 
 
+  
+    <footer class="footer">
 
-        <div class="card">
-            <span>المفضلة</span>
-            <span>⭐️</span>
-        </div>
+        <h3>IU — جامعة الإسراء</h3>
 
+        <p>منصتك التعليمية الجامعية</p>
 
-        <div class="card">
-            <span>تسجيل خروج</span>
-            <span>🚪</span>
-        </div>
+        <p>© 2026 Al-Isra University. All Rights Reserved.</p>
 
-
-
-    </div>
-
-
-
-
-  <div>
-        <h1 class="eer"> I</h1>
-
-
-    </div>
-
-<div>
-        <h1 class="eeT"> U</h1>
-
-
-
-
-
+    </footer>
 
 </body>
-</html> 
+</html>
+```

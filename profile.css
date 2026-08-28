@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.profile-header {
+    background-color: #6E1A37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.profile-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 3px;
+}
+
+.profile-logo-text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.back-home {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #f3d6df;
+}
+
+.profile-page {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.profile-page h1 {
+    color: #6E1A37;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: right;
+    border-right: 6px solid #6E1A37;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    color: #6E1A37;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+.academic-section {
+    margin-top: 40px;
+}
+
+.academic-section h2 {
+    color: #6E1A37;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.academic-container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.academic-card {
+    background-color: white;
+    width: 30%;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.academic-card:hover {
+    transform: translateY(-5px);
+}
+
+.academic-icon {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.academic-card h3 {
+    color: #6E1A37;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.academic-card p {
+    color: #666;
+    font-size: 16px;
+}

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+}
+.contact-header {
+    background-color: #6E1A37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+.contact-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 3px;
+}
+
+.contact-logo-text {
+    font-size: 40px;
+    font-weight: bold;
+}
+.back-home {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #f3d6df;
+}
+.contact-page {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-page h1 {
+    color: #6E1A37;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.contact-card {
+    background-color: white;
+    width: 31%;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+.contact-icon {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.contact-card h2 {
+    color: #6E1A37;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+.contact-card p {
+    color: #666;
+    font-size: 16px;
+}
+.contact-footer {
+    background-color: #f8f8f8;
+    color: #6E1A37;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.contact-footer p {
+    font-size: 14px;
+    margin: 0;
+}
