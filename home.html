@@ -1,163 +1,30 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al-Isra University</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>جامعة الإسراء — المنصة التعليمية</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="subjects.js" defer></script><script src="app.js" defer></script>
 </head>
-
 <body>
-
-   
-    <header class="header">
-
-        <div class="logo">
-            <span class="logo-text">IU</span>
-            <span class="logo-subtext">جامعة الإسراء</span>
-            <span class="logo-subtext">AL-ISRA UNIVERSITY</span>
-        </div>
-
-        <nav class="pa-links">
-            <a href="#">الرئيسية</a>
-            <a href="profile.html">الملف الشخصي</a>
-            <a href="aboutas.html">من نحن</a>
-        </nav>
-
-    </header>
-
-
+  <header class="header">
+    <a class="logo" href="home.html"><strong>IU</strong><span>جامعة الإسراء</span><small>AL-ISRA UNIVERSITY</small></a>
+    <nav class="pa-links" aria-label="Main navigation">
+      <a href="home.html" data-i18n="home">الرئيسية</a><a href="#subjects" data-i18n="subjects">المواد</a>
+      <a href="profile.html" data-i18n="profile">الملف الشخصي</a><a href="aboutas.html" data-i18n="about">من نحن</a>
+    </nav>
+    <div class="controls"><button data-language-toggle type="button">English</button><button data-theme-toggle type="button" aria-label="Toggle theme">☼ / ◐</button></div>
+  </header>
+  <main>
     <section class="hero-section">
-
-        <div class="hero-content">
-
-            <h1>أهلاً وسهلاً بكم في منصتنا التعليمية 🎓</h1>
-
-            <p>
-                منصتك التعليمية للوصول إلى المواد الدراسية،
-                الأسئلة السابقة والواجبات وكل ما تحتاجه خلال مسيرتك الجامعية.
-            </p>
-
-            <a href="#subjects" class="hero-button">استكشف المواد</a>
-
-        </div>
-
+      <div class="hero-content"><p class="eyebrow">IU LEARNING HUB</p><h1 data-i18n="welcome">أهلاً وسهلاً بكم في منصتنا التعليمية</h1><p data-i18n="heroText">منصتك للوصول إلى المواد الدراسية والملفات التي تحتاجها خلال مسيرتك الجامعية.</p><a href="#subjects" class="hero-button" data-i18n="explore">استكشف المواد</a></div>
+      <div class="book-stage" aria-hidden="true"><div class="book-shadow"></div><div class="book"><div class="book-back"></div><div class="book-pages"></div><div class="book-page two"></div><div class="book-page one"></div><div class="book-cover"><span>IU</span><small>KNOWLEDGE<br>OPENS DOORS</small></div></div></div>
     </section>
-
-
-  
-    <section class="student-section">
-
-        <h2>معلومات الطالب</h2>
-
-        <div class="student-card">
-
-            <img 
-                class="user-img"
-                src="https://www.w3schools.com/howto/img_avatar.png"
-                alt="Student">
-
-            <div class="student-info">
-
-                <h3>مرحباً، الطالب 👋</h3>
-
-                <p><strong>التخصص: </strong> &nbsp; هندسة البرمجيات</p>
-
-                <p><strong> الرقم الجامعي: </strong>&nbsp; 12354 </p>
-
-                <p><strong >السنة الدراسية: </strong> &nbsp; الثانية</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="subjects-section" id="subjects">
-
-        <h2>موادك الدراسية</h2>
-
-        <div class="subjects-container">
-
-            <div class="subject-card">
-
-                <div class="subject-icon">⚛️</div>
-
-                <h3>الفيزياء</h3>
-
-                <p>
-                    كل ما يتعلق بمادة الفيزياء من مواد وأسئلة وواجبات.
-                </p>
-
-                <a href="#" class="subject-button">عرض المادة</a>
-
-            </div>
-
-
-          
-            <div class="subject-card">
-
-                <div class="subject-icon">∫</div>
-
-                <h3>الكالكولاس</h3>
-
-                <p>
-                    المحاضرات والأسئلة السابقة والواجبات الخاصة بالكالكولاس.
-                </p>
-
-                <a href="#" class="subject-button">عرض المادة</a>
-
-            </div>
-
-
-       
-            <div class="subject-card">
-
-                <div class="subject-icon">💻</div>
-
-                <h3>البرمجة</h3>
-
-                <p>
-                    مواد البرمجة والأسئلة السابقة والواجبات والملفات.
-                </p>
-
-                <a href="#" class="subject-button">عرض المادة</a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    </section>
-
-
-    <section class="contact-section">
-
-        <h2>تواصل معنا</h2>
-
-        <p>
-            إذا كان لديك أي استفسار أو تحتاج إلى مساعدة، يمكنك التواصل معنا.
-        </p>
-
-        <a href="contact.html" class="contact-button">تواصل معنا</a>
-
-    </section>
-
-
-  
-    <footer class="footer">
-
-        <h3>IU — جامعة الإسراء</h3>
-
-        <p>منصتك التعليمية الجامعية</p>
-
-        <p>© 2026 Al-Isra University. All Rights Reserved.</p>
-
-    </footer>
-
-</body>
-</html>
-```
+    <section class="student-section"><h2 data-i18n="studentInfo">معلومات الطالب</h2><div class="student-card"><img class="user-img" src="https://www.w3schools.com/howto/img_avatar.png" alt="Student"><div class="student-info"><h3 data-i18n="hello">مرحباً، الطالب 👋</h3><p><strong data-i18n="majorLabel">التخصص:</strong> <span data-i18n="major">هندسة البرمجيات</span></p><p><strong data-i18n="idLabel">الرقم الجامعي:</strong> 12354</p><p><strong data-i18n="yearLabel">السنة الدراسية:</strong> <span data-i18n="year">الثانية</span></p></div></div></section>
+    <section class="subjects-section" id="subjects"><p class="eyebrow">COURSE LIBRARY</p><h2 data-i18n="yourSubjects">موادك الدراسية</h2><div class="subjects-container" data-subject-list></div></section>
+    <section class="contact-section"><h2 data-i18n="contact">تواصل معنا</h2><p data-i18n="contactText">إذا كان لديك أي استفسار أو تحتاج إلى مساعدة، يمكنك التواصل معنا.</p><a href="contact.html" class="contact-button" data-i18n="contact">تواصل معنا</a></section>
+  </main>
+  <footer class="footer"><h3>IU — جامعة الإسراء</h3><p data-i18n="platform">منصتك التعليمية الجامعية</p><p>© 2026 Al-Isra University</p></footer>
+</body></html>
